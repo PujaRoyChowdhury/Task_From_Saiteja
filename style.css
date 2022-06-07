@@ -14,73 +14,51 @@ body {
     overflow-x: hidden;
 }
 
-.nav {
-    background-image: url(assets/hero.jpg);
+.container {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/hero.jpg') no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     color: #f8f9fa;
 }
 
+/*======= header Section ======*/
 header {
     width: 100%;
 }
 
 /*======= Navbar Section ======*/
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 80px;
-    color: #f8f9fa;
-    position: absolute;
-    z-index: 1;
-}
 
-.nav-icon {
+.navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
-    color: #fff;
+    padding: 10px 90px;
     align-items: center;
-    padding-right: 200px;
-    font-size: 23px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
+    justify-content: space-between;
+    color: #fff;
+    background: transparent;
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 800;
-    margin-top: 15px;
-    margin-left: 250px;
+    padding-left: 57px;
 }
 
-/* .container{
-    margin: 0;
-    width: 0 auto;
-    
-} */
+/*======= banner Section ======*/
 .banner {
     position: relative;
-} 
+}
 
- .banner-content {
+.banner-content {
     position: absolute;
-    top: 150px;
-    left: 250px;
-    height: 600px;
-    width: 450px;
-} 
-/* .banner {
-    width: 100%;
-} 
-.banner-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-} */
+    top: 40%;
+    left: 20%;
+    transform: translate(-20%, -40%);
+    max-width: 450px;
+}
 
 
 .heading {
@@ -108,34 +86,26 @@ header {
     font-weight: 700;
 }
 
+/*======= about Section ======*/
 .about {
     position: relative;
-}
-
-.about-container {
-    position: absolute;
     width: 70%;
-    left: 250px;
-    right: 250px;
+    margin: 0 auto;
 }
-/* .about-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    /* margin-left: 40px; 
-} */
 
 .about-container h2 {
     margin-top: 60px;
     margin-bottom: 20px;
-    font-size: 32px;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #272727;
 }
 
 .about-container p {
     margin-bottom: 80px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
-    /* font-weight: 400; */
+    color: #272727;
+    font-weight: 500;
 }
