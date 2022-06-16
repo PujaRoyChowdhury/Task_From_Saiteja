@@ -1,24 +1,30 @@
-/* ====== For Mobile ====== */
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 576px) {
     .container {
         height: 60vh;
     }
 
     /*======= Navbar Section ======*/
     .navbar {
+        position: fixed;
         padding: 20px;
     }
 
     .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         margin: 0;
-        padding-left: 20px;
-
+        padding: 0;
     }
 
+    /* .nav-icon{
+        margin-right: 188px;
+    } */
     /*======= banner Section ======*/
     .banner-content {
-        top: 30%;
+        top: 37%;
+        left: 16%;
+        width: 61%;
     }
 
     .heading {
@@ -42,13 +48,57 @@
 
 }
 
-/* ====== For tablet ====== */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
+    .container {
+        height: 90vh;
+    }
+
     h2 {
         font-size: 30px;
     }
 
+    .navbar {
+        position: fixed;
+    }
+
     .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    .nav-icon {
+        margin-right: 0;
+    }
+
+    .banner-content{
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+        padding: 0;
         font-size: 16px;
         font-weight: 800;
     }
